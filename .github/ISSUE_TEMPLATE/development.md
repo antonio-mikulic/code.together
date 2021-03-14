@@ -1,6 +1,6 @@
 ---
 name: Development
-about: Development work that has to be dine
+about: Development work that has to be done
 title: ''
 labels: ''
 assignees: ''
@@ -12,3 +12,7 @@ assignees: ''
 **Acceptance Criteria**
 
 **Additional information**
+
+**Estimation**
+
+**Blockers**
