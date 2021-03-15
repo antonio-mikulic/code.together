@@ -16,6 +16,7 @@ using Code.Together.Identity;
 using Abp.AspNetCore.SignalR.Hubs;
 using Abp.Dependency;
 using Abp.Json;
+using Code.Together.WebRtc;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
 
@@ -75,6 +76,8 @@ namespace Code.Together.Web.Host.Startup
                 )
             );
 
+            services.AddSignalR();
+
             // Swagger - Enable this line and the related lines in Configure method to enable swagger UI
             services.AddSwaggerGen(options =>
             {
@@ -131,9 +134,9 @@ namespace Code.Together.Web.Host.Startup
 
             app.UseAbpRequestLocalization();
 
-          
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<WebRtcHub>("/signalr-webrtc");
                 endpoints.MapHub<AbpCommonHub>("/signalr");
                 endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute("defaultWithArea", "{area}/{controller=Home}/{action=Index}/{id?}");
