@@ -4,14 +4,16 @@ using Code.Together.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Code.Together.Migrations
 {
     [DbContext(typeof(TogetherDbContext))]
-    partial class TogetherDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210402095738_InitCustomTables")]
+    partial class InitCustomTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1572,9 +1574,6 @@ namespace Code.Together.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("OwnerId")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("OwnerType")
                         .HasColumnType("int");
 
@@ -1691,7 +1690,7 @@ namespace Code.Together.Migrations
 
                     b.HasIndex("TenantId");
 
-                    b.ToTable("CompanyCodingTasks");
+                    b.ToTable("CompanyCodingTask");
                 });
 
             modelBuilder.Entity("Code.Together.Employers.JobOffering", b =>
@@ -1865,8 +1864,6 @@ namespace Code.Together.Migrations
                     b.HasIndex("InterviewId");
 
                     b.HasIndex("JobOfferingId");
-
-                    b.HasIndex("TenantId");
 
                     b.ToTable("JobOfferingInterviews");
                 });
