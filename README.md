@@ -4,7 +4,7 @@
 ## [ABP](https://aspnetboilerplate.com)
 Used for fast startup, so we can focus on business logic and not basic project setup. 
 
-## [WebRTC] (https://webrtc.org/) 
+## [WebRTC](https://webrtc.org/) 
 Used for live video chat
 
 ## SignalR
