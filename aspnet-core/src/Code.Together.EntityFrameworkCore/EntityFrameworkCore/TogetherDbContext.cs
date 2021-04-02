@@ -3,7 +3,7 @@ using Abp.Zero.EntityFrameworkCore;
 using Code.Together.Authorization.Roles;
 using Code.Together.Authorization.Users;
 using Code.Together.CodingTasks;
-using Code.Together.Company;
+using Code.Together.Companies;
 using Code.Together.Interviews;
 using Code.Together.MultiTenancy;
 using Code.Together.ProgrammingLanguages;
@@ -25,7 +25,7 @@ namespace Code.Together.EntityFrameworkCore
         }
 
         public DbSet<CodingTask> CodingTasks { get; set; }
-        public DbSet<Company.Company> Companies { get; set; }
+        public DbSet<Company> Companies { get; set; }
         public DbSet<CompanyCodingTask> CompanyCodingTasks { get; set; }
         public DbSet<JobOffering> JobOfferings { get; set; }
         public DbSet<Interview> Interviews { get; set; }
@@ -51,7 +51,7 @@ namespace Code.Together.EntityFrameworkCore
             modelBuilder.Entity<CompanyCodingTask>()
                 .HasIndex(p => p.TenantId);
 
-            modelBuilder.Entity<Company.Company>()
+            modelBuilder.Entity<Company>()
                 .HasIndex(p => p.TenantId);
 
             modelBuilder.Entity<JobOffering>()

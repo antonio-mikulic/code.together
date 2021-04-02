@@ -1,6 +1,6 @@
 ﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
-using Code.Together.Company;
+using Code.Together.Companies;
 
 namespace Code.Together.Interviews
 {

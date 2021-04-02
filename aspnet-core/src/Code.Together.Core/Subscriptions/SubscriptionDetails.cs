@@ -1,6 +1,7 @@
 ﻿using System;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using Code.Together.Companies;
 
 namespace Code.Together.Subscriptions
 {
@@ -12,6 +13,6 @@ namespace Code.Together.Subscriptions
         public double Price { get; set; }
         
         public int CompanyId { get; set; }
-        public Company.Company Company { get; set; }
+        public Company Company { get; set; }
     }
 }

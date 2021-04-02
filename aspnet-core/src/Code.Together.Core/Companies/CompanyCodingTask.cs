@@ -2,7 +2,7 @@
 using Abp.Domain.Entities.Auditing;
 using Code.Together.CodingTasks;
 
-namespace Code.Together.Company
+namespace Code.Together.Companies
 {
     public class CompanyCodingTask : FullAuditedEntity, IMustHaveTenant
     {

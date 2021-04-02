@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Abp.Authorization.Users;
 using Abp.Extensions;
+using Code.Together.Companies;
 using Code.Together.Interviews;
 using Code.Together.ProgrammingLanguages;
 using Code.Together.UserTasks;
@@ -13,7 +14,7 @@ namespace Code.Together.Authorization.Users
         public const string DefaultPassword = "123qwe";
 
         public int? CompanyId { get; set; }
-        public Company.Company Company { get; set; }
+        public Company Company { get; set; }
 
         public ICollection<InterviewUser> InterviewUsers { get; set; } = new List<InterviewUser>();
         public ICollection<ProgrammingLanguageUser> ProgrammingLanguages { get; set; } = new List<ProgrammingLanguageUser>();

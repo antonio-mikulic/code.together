@@ -2,7 +2,7 @@
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using Code.Together.CodingTasks;
-using Code.Together.Company;
+using Code.Together.Companies;
 using Code.Together.Resources;
 using Code.Together.Tags;
 

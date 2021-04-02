@@ -3,7 +3,7 @@ using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using Code.Together.Subscriptions;
 
-namespace Code.Together.Company
+namespace Code.Together.Companies
 {
     public class Company : FullAuditedEntity, IMustHaveTenant
     {

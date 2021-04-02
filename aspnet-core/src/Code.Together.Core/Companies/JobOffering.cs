@@ -5,7 +5,7 @@ using Code.Together.Interviews;
 using Code.Together.ProgrammingLanguages;
 using Code.Together.Tags;
 
-namespace Code.Together.Company
+namespace Code.Together.Companies
 {
     public class JobOffering : FullAuditedEntity, IMustHaveTenant
     {

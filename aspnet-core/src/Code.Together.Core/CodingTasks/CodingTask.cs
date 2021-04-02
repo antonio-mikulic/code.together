@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
-using Code.Together.Company;
+using Code.Together.Companies;
 using Code.Together.ProgrammingLanguages;
 using Code.Together.Tags;
 using Code.Together.UserTasks;
