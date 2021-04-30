@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using Abp.Domain.Entities;
+﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using Code.Together.CodingTasks;
 using Code.Together.Companies;
 using Code.Together.Resources;
 using Code.Together.Tags;
+using System.Collections.Generic;
 
 namespace Code.Together.ProgrammingLanguages
 {
